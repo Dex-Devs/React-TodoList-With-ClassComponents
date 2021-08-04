@@ -8,7 +8,7 @@ function Header() {
         textAlign: "center",
         padding: 20,
         boxShadow: "1px 4px 8px #5f8f88",
-        marginBottom: "25px",
+        marginBottom: "32px",
         wordSpacing: "1ch",
         letterSpacing: ".5ch",
     };
@@ -20,7 +20,7 @@ function Header() {
     return(
         <header style={headerStyle}>
             <h1 style={{marginBottom: 12, color: "#000"}}>SIMPLE REACT TODO LIST</h1>
-            <Link style={linkStyle} to="/">Home</Link> | <Link style={linkStyle} to="/about">About</Link>
+            <Link style={linkStyle} to={process.env.PUBLIC_URL + '/'}>Home</Link> | <Link style={linkStyle} to={process.env.PUBLIC_URL + '/about'}>About</Link>
         </header>
     )
 }

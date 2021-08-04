@@ -11,10 +11,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  margin-bottom: 32px;
+  padding: 8px;
+}
 .todo-form {
   display: flex;
   width: 60%;
-  margin: 20px auto;
+  margin: 0px auto;
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
 }

@@ -133,7 +133,7 @@ class App extends Component {
                             <img style={{
                               maxWidth: "100%",
                               width: "55%"
-                            }}src={noTaskImageDisplay} />
+                            }}src={noTaskImageDisplay} alt="todo list vector image" />
                             <br></br>
                             <a style={{
                               textDecoration: "none",
