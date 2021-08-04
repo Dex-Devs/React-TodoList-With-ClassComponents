@@ -116,12 +116,12 @@ class App extends Component {
     }
 
     return (
-       <Router basename={process.env.PUBLIC_URL}>
+       <Router>
          <div className="App">
            <Header />
 
             <Route exact
-              path="/"
+              path={process.env.PUBLIC_URL + '/'}
               render = {props => (
                 <React.Fragment>
                     <div className="container">
@@ -147,7 +147,7 @@ class App extends Component {
                         )}
               />
 
-              <Route path="/about" component={About}/>
+              <Route path={process.env.PUBLIC_URL + '/about'} component={About}/>
          </div>
 
        </Router>
