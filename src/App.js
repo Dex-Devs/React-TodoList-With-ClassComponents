@@ -129,7 +129,7 @@ class App extends Component {
                       {/* CONDITIONAL RENDERING */}
                       {this.state.todos.length <= 0 &&
                           <div style={noTodoStyle}>
-                            <h1>Your list is currently empty.<br></br>Add some tasks to keep yourself productive.</h1>
+                            <h3>Your list is currently empty.<br></br>Add some tasks to keep yourself productive.</h3>
                             <img style={{
                               maxWidth: "100%",
                               width: "55%"
