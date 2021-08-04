@@ -8,6 +8,8 @@ import {v4 as uuid} from "uuid";
 import noTaskImageDisplay from './images/todo.jpg';
 import './App.css';
 
+require('dotenv').config();
+
 class App extends Component {
 
   constructor(props) {
@@ -114,7 +116,7 @@ class App extends Component {
     }
 
     return (
-       <Router>
+       <Router basename={process.env.PUBLIC_URL}>
          <div className="App">
            <Header />
 
